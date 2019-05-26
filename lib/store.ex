@@ -1,5 +1,5 @@
-  defmodule Store do
-    alias Parser
+  defmodule Lab1.Store do
+    alias Lab1.Parser
     use GenServer
 
     #GenServer.start_link(module, init_arg, options \\ [])

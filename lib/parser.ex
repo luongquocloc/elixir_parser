@@ -1,4 +1,4 @@
-defmodule Parser do
+defmodule Lab1.Parser do
   @filepath "data/data.txt"
   def main(_args) do
     parser()

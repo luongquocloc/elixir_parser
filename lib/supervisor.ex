@@ -1,4 +1,4 @@
-defmodule Supervisor do
+defmodule Lab1.Supervisor do
   use Supervisor
 
   def start_link do
@@ -7,9 +7,8 @@ defmodule Supervisor do
 
   def init(_) do
     children = [
-      worker(Store, [])
+      worker(Lab1.Store, [])
     ]
-
     supervise(children, strategy: :one_for_one)
   end
 end
