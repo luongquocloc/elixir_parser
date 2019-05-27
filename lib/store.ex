@@ -9,7 +9,7 @@
 
     ###INIT Tuple data from Paser.parser
     def init(_) do
-      {:ok, Parser.parser}
+      {:ok, Lab1.Parser.parser}
     end
 
     ###get geo data by postal_code get from init data
@@ -17,6 +17,7 @@
       GenServer.call(:code_store, {:get_geolocation, postal_code})
     end
 
+    ##Handle call func a return Map.get data by postal_code
     def handle_call({:get_geolocation, postal_code}, _from, geo_data) do
       geolocaiton = Map.get(geo_data, postal_code)
       {:reply, geolocaiton, geo_data}

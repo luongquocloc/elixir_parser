@@ -9,7 +9,7 @@ defmodule Parser.MixProject do
       build_embedded: Mix.env() == :prod,
      start_permanent: Mix.env() == :prod,
      ####MIX_ENV=prod mix escript.build
-      escript: [main_module: Lab1.Parser],
+      escript: [main_module: Parser],
       deps: deps()
     ]
   end
@@ -17,8 +17,8 @@ defmodule Parser.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger],
-      mod: {DeliveryParser, []}
+      #extra_applications: [:logger],
+      #mod: {DeliveryParser, []}
     ]
   end
 

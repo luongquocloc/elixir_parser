@@ -1,9 +1,8 @@
-defmodule DeliveryParser do
-  use Application
+#defmodule DeliveryParser do
+#  use Application#
+#
+#  def start(_type, _args) do
+#    Supervisor.start_link
+#  end#
 
-  def start(_type, _args) do
-    Lab1.Supervisor.start_link
-
-  end
-
-end
+#end
